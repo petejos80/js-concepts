@@ -39,16 +39,16 @@ Notice how Javascript didn't wait for a response from the 'first' function befor
 // 1
 ```
 
-To fix this issue, we can use a callback to make sure the code doesn’t execute until the previous function has finished executing:
+To avoid such situations, we can use a callback to make sure certain code doesn’t execute until other code has already finished execution:
 
 ```
 function doHomework(subject, callback) {
-  console.log(`Starting my ${subject} homework.`);
+  alert(`Starting my ${subject} homework.`);
   callback();
 }
 
 doHomework('math', function() {
-  console.log('Finished my homework');
+  alert('Finished my homework.');
 });
 ```
 
