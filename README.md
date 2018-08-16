@@ -8,20 +8,9 @@
 1. [MySQL Questions](/questions/javascript-questions.md)
 
 
-***
-## HTML Questions
-
-
-
-***
-## CSS Questions
-
-
-
-***
 ## Javascript Questions
 
-### What is a Higher-order function?
+<!-- ### What is a Higher-order function? -->
 
 
 ### What is a Callback function?
@@ -52,45 +41,35 @@ Notice how Javascript didn't wait for a response from the 'first' function befor
 
 To fix this issue, we can use a callback to make sure the code doesn’t execute until the previous function has finished executing:
 
-function first(){
-  // Simulate a code delay
-  setTimeout( function(){
-    console.log(1);
-  }, 500 );
-}
-
+```
 function doHomework(subject, callback) {
-  // Simulate a code delay
-  setTimeout( function(subject,){
-      alert('I am starting my ${subject} homework!')
+  console.log(`Starting my ${subject} homework.`);
   callback();
-  }, 1500);
 }
 
 doHomework('math', function() {
-  alert('I just finished my ${subject} homework!')
+  console.log('Finished my homework');
 });
+```
 
 
 
+## HTML Questions
 
 
 
+## CSS Questions
 
 
 
-
-***
 ## React Questions
 
 
 
-***
 ## MongoDB Questions
 
 
 
-***
 ## MySQL
 
 
@@ -102,4 +81,3 @@ doHomework('math', function() {
 * https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
 * https://www.sitepoint.com/higher-order-functions-javascript/
-netspi
