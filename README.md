@@ -43,7 +43,7 @@ first();
 second();
 ```
 
-Notice how Javascript didn't wait for a response from from 'first' before moving on to execute 'second'.  For this reason, our console logged the following output.
+Notice how Javascript didn't wait for a response from the 'first' function before moving on to execute 'second'.  For this reason, our console logged the following output.
 
 ```
 // 2
