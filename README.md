@@ -50,7 +50,7 @@ Notice how Javascript didn't wait for a response from the 'first' function befor
 // 1
 ```
 
-To fix this issue, we can use a callback function.  Callbacks are a way to make sure certain code doesn’t execute until other code has finished execution:
+To fix this issue, we can use a callback to make sure the code doesn’t execute until the previous function has finished executing:
 
 function first(){
   // Simulate a code delay
